@@ -1,0 +1,39 @@
+/* Essential resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* React Flow overrides - only styles that can't be handled by MUI */
+.react-flow {
+  width: 100%;
+  height: 100%;
+}
+
+.react-flow__node {
+  /* Remove default React Flow styles to let MUI Paper component handle styling */
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+}
+
+.react-flow__handle {
+  /* Customize connection points */
+  width: 8px;
+  height: 8px;
+}
+
+/* Preview iframe */
+.preview-pane {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
